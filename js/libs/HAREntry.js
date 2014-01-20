@@ -108,14 +108,14 @@ var HAREntry = (function HAREntryClosure() {
 
     getTime: function () {
       if (this._entry.time > 0) {
-        return this._entry.time + "ms";
+        return this._entry.time;
       }
       return 0;
     },
 
     getLatency: function () {
       if (this._entry.time > 0) {
-        return this._entry.time - this._entry.timings.receive + "ms";
+        return this._entry.time - this._entry.timings.receive;
       }
       return 0;
 

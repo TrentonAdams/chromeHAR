@@ -247,6 +247,12 @@
     }
   });
 
+  cH.filter('roundMS', function() {
+    return function(input) {
+      return Math.round(input) + 'ms';
+    };
+  });
+
 
   /**
    * Angular Drag and Drop Event bindings.
